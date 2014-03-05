@@ -12,3 +12,6 @@ Exclamation mark added same line
 Kyrie Test
 My First Test!!!
 Conflict Test By Kyrie!
+Added for multiple conflict!!
+I add another txt on my account!
+Hope it succeed!
