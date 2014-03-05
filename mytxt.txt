@@ -1,1 +1,3 @@
 My own file!!
+Sample conflict for Kyrie
+2nd line for Kyrie
