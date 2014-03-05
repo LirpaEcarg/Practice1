@@ -10,8 +10,10 @@ continue Test hogefugahoge
 continue Test!!!!!!
 Exclamation mark added same line
 Kyrie Test
+Conflict Test by April
 My First Test!!!
 Conflict Test By Kyrie!
 Added for multiple conflict!!
 I add another txt on my account!
 Hope it succeed!
+
