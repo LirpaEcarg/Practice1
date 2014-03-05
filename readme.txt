@@ -9,3 +9,4 @@ new April change
 continue Test hogefugahoge
 continue Test!!!!!!
 Exclamation mark added same line
+Kyrie Test
