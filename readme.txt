@@ -6,4 +6,4 @@ rebase practice.
 you enter continue command when happen conflict.
 another change by April
 new April change
-continue Test
+continue Test hogefugahoge
