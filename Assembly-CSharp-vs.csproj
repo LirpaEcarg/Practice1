@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{7FB4683D-3CEF-FAB1-354C-B55D9887E927}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity 4.3.3/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity 4.3.3/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Effect\EffectController.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UICenterOnClick.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropContainer.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropItem.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragDropRoot.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIDragResize.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Interaction\UIProgressBar.cs" />
+     <Compile Include="Assets\NGUI\Scripts\Internal\UIRect.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSprite.cs" />
+     <Compile Include="Assets\NGUI\Scripts\UI\UI2DSpriteAnimation.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\LanguageSelection.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIButton.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIButtonActivate.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIButtonColor.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIButtonKeyBinding.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIButtonKeys.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIButtonMessage.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIButtonOffset.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIButtonRotation.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIButtonScale.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UICenterOnChild.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIDragCamera.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIDragObject.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIDragPanelContents.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIDraggableCamera.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIDraggablePanel.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIForwardEvents.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIGrid.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIImageButton.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIPlayAnimation.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIPlaySound.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIPlayTween.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIPopupList.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UISavedOption.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIScrollBar.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UISlider.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UISoundVolume.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UITable.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIToggle.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIToggledComponents.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIToggledObjects.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Interaction\UIWidgetContainer.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\ActiveAnimation.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\AnimationOrTween.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\BMFont.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\BMGlyph.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\BMSymbol.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\BetterList.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\ByteReader.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\EventDelegate.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\Localization.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\NGUIDebug.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\NGUIMath.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\NGUIText.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\NGUITools.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\RealTime.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\SpringPanel.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\UIDrawCall.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\UIEventListener.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\UIGeometry.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Internal\UIWidget.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\AnimatedAlpha.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\AnimatedColor.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\SpringPosition.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenAlpha.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenColor.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenFOV.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenHeight.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenOrthoSize.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenPosition.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenRotation.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenScale.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenTransform.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenVolume.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\TweenWidth.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\Tweening\UITweener.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UIAnchor.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UIAtlas.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UICamera.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UIFont.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UIInput.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UILabel.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UILocalize.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UIOrthoCamera.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UIPanel.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UIRoot.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UISprite.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UISpriteAnimation.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UISpriteData.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UIStretch.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UITextList.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UITexture.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UITooltip.cs" />
+     <Compile Include="Assets\OtherAsset\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\OtherAsset\Unibill\script\ComboBox.cs" />
+     <Compile Include="Assets\OtherAsset\Unibill\script\UnibillDemo.cs" />
+     <Compile Include="Assets\OtherAsset\iTween\iTween.cs" />
+     <Compile Include="Assets\OtherAsset\iTweenEditor\Helper Classes\EventParamMappings.cs" />
+     <Compile Include="Assets\OtherAsset\iTweenEditor\Helper Classes\Vector3OrTransform.cs" />
+     <Compile Include="Assets\OtherAsset\iTweenEditor\Helper Classes\Vector3OrTransformArray.cs" />
+     <Compile Include="Assets\OtherAsset\iTweenEditor\iTweenEvent.cs" />
+     <Compile Include="Assets\OtherAsset\iTweenEditor\iTweenPath.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\Common\ConfirmCommon.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmAddMaxCard\ConfirmAddMaxCardController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmBoughtCard\ConfirmBoughtCardController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmBoughtChocolate\ConfirmBoughtChocolateController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmBuyCard\ConfirmBuyCardController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmCheer\ConfirmCheerController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmChocolate10Gacha\ConfirmChocolate10GachaController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmChocolateGacha\ConfirmChocolateGachaController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmClearReward\ConfirmClearReward.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmClearReward\__ConfirmClearRewardMock.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmContinue\ConfirmContinueController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmCookieGacha\ConfirmCookieGachaController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmDoneUpdate\ConfirmDoneUpdateController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmFinish\ConfirmFinishController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmLackOfAp\ConfirmLackOfApController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmLackOfChocolate\ConfirmLackOfChocolateController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmLackOfCookie\ConfirmLackOfCookieController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmLevelUp\ConfirmLevelUpController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmMaxCard\ConfirmMaxCardController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmPutPresent\ConfirmPutPresentController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmRetire\ConfirmRetireController.cs" />
+     <Compile Include="Assets\Prefabs\Confirm\ConfirmReview\ConfirmReviewController.cs" />
+     <Compile Include="Assets\Prefabs\Container\CommonAssetContainer.cs" />
+     <Compile Include="Assets\Prefabs\Container\SpriteContainer\SpriteContainerController.cs" />
+     <Compile Include="Assets\Prefabs\Container\SpriteContainer\SpriteContainerManager.cs" />
+     <Compile Include="Assets\Prefabs\Effect\EffectBullet\EffectAttackController.cs" />
+     <Compile Include="Assets\Prefabs\Effect\EffectDamageNo\DamageNoEffectController.cs" />
+     <Compile Include="Assets\Prefabs\Logic\QuizeLogicMock.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartAlly\PartAllyController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBack\IBackable.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBack\PartBackController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\AllyGroup.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\AllyModel.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\BattleController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\CharactorBaseModel.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\CharactorGroup.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\EnemyBuilder.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\EnemyGroup.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\EnemyModel.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\GroupQuizeController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\GroupWarController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\IRecieveBattleResult.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\IRecieveFromEnemy.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\IRecieveQuizeResult.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\IWarResultRecievable.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\QuestionController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartBattle\Script\QuestionTitleController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartButtonTeam\PartButtonTeamController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartCard\PartCardController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartClose\IClosable.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartClose\PartClose.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartDeckCard\DeckShow.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartDeckCard\DeckUseCard.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartDeckIcon\PartDeckIconController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartEnemy\PartEnemyController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartExploreAnimation\PartExploreAnimationController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartExploreHeader\PartExploreHeaderController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartExploreNavi\IRetirable.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartExploreNavi\PartExploreNavi.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartGachaButton\PartGachaButtonController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartGenre\Genre.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartGenre\IGenreSelectable.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartGenre\PartGenreController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartIcon\ICardIconShowable.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartIcon\PartIconController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartLog\PartLogController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartLogGenreRecord\PartLogGenreRecordController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartLogNavi\ILogNaviSelected.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartLogNavi\PartLogNaviController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartLogNavi\PartLogNavigationButtonController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartMenu\PartMenuController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartMyStatus\PartMyStatusController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartMyStatus\PartMyStatusModel.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartMyStatus\PartMyStatusView.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartNavigation\PartNavigationButtonController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartNavigation\PartNavigationController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartQuestJapan\IAreaSelectable.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartQuestJapan\IProvinceSelectable.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartQuestJapan\PartQuestionJapanController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartQuestKanto\PartQuestionKantoController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartQuestKinki\PartQuestKinkiController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartQuestOgasawara\PartQuestOgasawaraController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartQuestionList\PartScrollController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartQuestionRecord\PartQuestionRecordController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartSelection\ISelectable.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartSelection\PartSelectionController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartStageRecord\IStageSelectable.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartStageRecord\PartStageRecordController.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartTweet\TextMeshTypeWritter.cs" />
+     <Compile Include="Assets\Prefabs\Part\PartTweet\TweetController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpCardShop\PartCardShopRecordController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpCardShop\PopUpCardShopController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpChallenge\PopUpStageChallengeController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpCharStats\CharShowStatInfo.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpGacha\PopUpGachaController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpHelp\GroupDetailController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpHelp\GroupListController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpHelp\IDetailShowable.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpHelp\PopUpHelpController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpHelpOp\PopUpHelpOpController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpMenu\PopUpMenuController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpQuestionDetail\PopUpQuestionDetailController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpQuestionDetail\_MockPopUpQuestionDetail.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpShop\PopUpShopController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpShop\PurchaseController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpShop\PurchaseModel.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpStage\PopUpStageController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpStage\PopUpStageMock.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpStory\PopUpStoryMock.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpStory\StoryController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpTeam\PopUpTeamController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpTrophy\CardGroupController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpTrophy\PopUpTrophyController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpTrophy\__MockPopUpTrophy.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopUpTrophy\__PopUpTrophyMock.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopupPresents\PopupPresentController.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\PopupPresents\PopupPresentList.cs" />
+     <Compile Include="Assets\Prefabs\PopUp\demo\__MockPopUpPresents.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenAfterExplore\_MockScreenAfterExplore.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenCardSell\Scripts\BackPageClick.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenCardSell\Scripts\CardOnClick.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenCardSell\Scripts\CardShowAllOnHand.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenCardSell\Scripts\CloseStatsInfo.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenCardSell\Scripts\NextPageClick.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenCardSell\Scripts\OkButtonClick.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenCardSell\Scripts\ScreenCardSelController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenCardSell\Scripts\SellCardOnClickStats.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenCardSell\Scripts\ShowCardStatInfo.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenDeckEdit\CardPrefab\CardShowPrefab.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenDeckEdit\DeckPrefab\DeckShowPrefab.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenDeckEdit\Scripts\BackPage.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenDeckEdit\Scripts\NextPage.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenDeckEdit\Scripts\OkButtonScript.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenDeckEdit\Scripts\ScreenDeckEditController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenDeckEdit\Scripts\ShowCardOnHand.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenDeckEdit\Scripts\ShowDeckOnHand.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenEndCredit\ScreenEndCredit.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenExplore\ScreenExploreController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenExplore\__ScreenExploreMock.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenGacha\CardGachaController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenGacha\_MockGachaAnim.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenLogGenreList\ILogGenreSelectable.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenLogGenreList\ScreenLogGenreListController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenLogQuestionList\ILogQuestionSelectable.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenLogQuestionList\ScreenLogQuestionListController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenLogQuestionList\_MockScreenLogQuestionList.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenProgress\ProgressAnimOkButtonAnimScript.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenProgress\Scripts\CloseStartProgress.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenProgress\Scripts\OkButtonClickProgress.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenProgress\Scripts\PageBackPogress.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenProgress\Scripts\PageNextProgress.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenProgress\Scripts\ProgressCard.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenProgress\Scripts\ProgressCardOnClick.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenProgress\Scripts\ProgressStatShow.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenProgress\Scripts\ScreenProgressController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenProgress\Scripts\ShowAllCardOnHandProgress.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenQuest\AreaController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenQuest\ProvinceController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenQuest\ScreenQuestController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenStrengthen\Scripts\CardOnClickStrengthen.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenStrengthen\Scripts\CardToBeStrengthen.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenStrengthen\Scripts\CardsStatInfoShow.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenStrengthen\Scripts\ClickBackPageCard.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenStrengthen\Scripts\ClickNextPageCard.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenStrengthen\Scripts\CloseButtonStat.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenStrengthen\Scripts\LeaderCard.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenStrengthen\Scripts\OkButtonClickScript.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenStrengthen\Scripts\ScreenStrengthenController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenStrengthen\Scripts\StrAnimationShow.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenTeamLibrary\Scripts\LibraryLibraryItemController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenTeamLibrary\Scripts\LibraryPageClick.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenTeamLibrary\Scripts\ScreenTeamLibraryController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenTop\ScreenTopController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenTutorial\ScreenTutorialController.cs" />
+     <Compile Include="Assets\Prefabs\Screen\ScreenTutorial\__ScreenExploreMock.cs" />
+     <Compile Include="Assets\Prefabs\Script\DeleteCollider.cs" />
+     <Compile Include="Assets\Prefabs\Script\Extention\GameObjectExtention.cs" />
+     <Compile Include="Assets\Prefabs\Script\Extention\TransformExtention.cs" />
+     <Compile Include="Assets\Prefabs\Script\FreCreModel.cs" />
+     <Compile Include="Assets\Prefabs\Script\FreCreOnClickToParent.cs" />
+     <Compile Include="Assets\Prefabs\Script\FreCrePassEventToParent.cs" />
+     <Compile Include="Assets\Prefabs\Script\FreCreState.cs" />
+     <Compile Include="Assets\Prefabs\Script\FreCreUtil.cs" />
+     <Compile Include="Assets\Prefabs\Script\MiniJSON.cs" />
+     <Compile Include="Assets\Prefabs\Script\MyUICamera.cs" />
+     <Compile Include="Assets\Prefabs\Script\Part\FreCreGroupableBehaviour.cs" />
+     <Compile Include="Assets\Prefabs\Script\Part\FreCrePart.cs" />
+     <Compile Include="Assets\Prefabs\Script\Part\FreCrePartBase.cs" />
+     <Compile Include="Assets\Prefabs\Script\Part\FreCrePartableBehaviour.cs" />
+     <Compile Include="Assets\Prefabs\Script\Part\IFreCrePartable.cs" />
+     <Compile Include="Assets\Prefabs\Script\SingletonMonoBehaviour.cs" />
+     <Compile Include="Assets\Prefabs\Script\SpritePressedColorButton.cs" />
+     <Compile Include="Assets\Prefabs\Script\SpritePressedImageButton.cs" />
+     <Compile Include="Assets\Prefabs\Script\UIRootScale.cs" />
+     <Compile Include="Assets\Prefabs\Script\View\AttributeChildName.cs" />
+     <Compile Include="Assets\Prefabs\Script\View\FreCreView.cs" />
+     <Compile Include="Assets\Prefabs\System\Admob\AdMobManager.cs" />
+     <Compile Include="Assets\Prefabs\System\Admob\Adds\AdsManager.cs" />
+     <Compile Include="Assets\Prefabs\System\Admob\Adds\HideAdmob.cs" />
+     <Compile Include="Assets\Prefabs\System\Admob\Adds\ShowAdmob.cs" />
+     <Compile Include="Assets\Prefabs\System\Admob\Adds\ShowAdmobAfterDestory.cs" />
+     <Compile Include="Assets\Prefabs\System\Admob\Mics\Advertisement\AdvertisementHandler.cs" />
+     <Compile Include="Assets\Prefabs\System\Analytics\AnaliticsScreen.cs" />
+     <Compile Include="Assets\Prefabs\System\Analytics\AnalyticsManagerController.cs" />
+     <Compile Include="Assets\Prefabs\System\AssetBundleManager\AssetBundleManager.cs" />
+     <Compile Include="Assets\Prefabs\System\AssetBundleManager\PrefabController.cs" />
+     <Compile Include="Assets\Prefabs\System\Const\DelegateList.cs" />
+     <Compile Include="Assets\Prefabs\System\Const\MyConst.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\AttributeResourcesPass.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\AttributeShowView.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumArea.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumAttribute.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumBattleState.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumLogSortType.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumPrefabName.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumPresentType.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumProvince.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumQuestionTitle.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumQuestionType.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumQuizeResult.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumRank.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumSpriteType.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumStageState.cs" />
+     <Compile Include="Assets\Prefabs\System\Enum\EnumTag.cs" />
+     <Compile Include="Assets\Prefabs\System\FrefabFactory\PrefabFactoryByResources.cs" />
+     <Compile Include="Assets\Prefabs\System\FrefabFactory\PrefabFactoryFacade.cs" />
+     <Compile Include="Assets\Prefabs\System\Logic\GachaLogic.cs" />
+     <Compile Include="Assets\Prefabs\System\Logic\GetCardLogic.cs" />
+     <Compile Include="Assets\Prefabs\System\Logic\QuizeLogic.cs" />
+     <Compile Include="Assets\Prefabs\System\Logic\StrengthenLogic.cs" />
+     <Compile Include="Assets\Prefabs\System\Logic\WarLogic.cs" />
+     <Compile Include="Assets\Prefabs\System\NetWorkManager\NetWorkManager.cs" />
+     <Compile Include="Assets\Prefabs\System\ProsessManager\AnimationManager.cs" />
+     <Compile Include="Assets\Prefabs\System\ProsessManager\GachaProsess.cs" />
+     <Compile Include="Assets\Prefabs\System\ProsessManager\InitProsess.cs" />
+     <Compile Include="Assets\Prefabs\System\ProsessManager\KeyManager.cs" />
+     <Compile Include="Assets\Prefabs\System\ProsessManager\RecoverApProsess.cs" />
+     <Compile Include="Assets\Prefabs\System\ProsessManager\StoryProsess.cs" />
+     <Compile Include="Assets\Prefabs\System\SoundManager\BGMManager.cs" />
+     <Compile Include="Assets\Prefabs\System\SoundManager\SFXManagerOnClick.cs" />
+     <Compile Include="Assets\Prefabs\System\SoundManager\SFXManagerOnStart.cs" />
+     <Compile Include="Assets\Prefabs\System\SoundManager\SoundManagerFacede.cs" />
+     <Compile Include="Assets\Prefabs\System\SpriteFactory\SpriteFactoryFacade.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\AnswerRecord.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\AnswerRecordDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\Area.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\AreaDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\AreaStateDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\Card.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\CardDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\CardLevel.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\CardLevelDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\CardOnHand.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\CardOnHandDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\CardShop.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\CardShopDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\DeckInfoDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\GameFlagDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\IDataBaseInsertable.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\PlayerLevel.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\PlayerLevelDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\Present.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\PresentDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\Province.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\ProvinceDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\ProvinceStateDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\Stage.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\StageDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\StageStateDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\Story.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\StoryDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\StoryFlagDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\Test.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\TestDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\TestState.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\TestStateDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\Tweet.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\TweetDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\DaoAndModel\UserInfoDao.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\StorageFace.cs" />
+     <Compile Include="Assets\Prefabs\System\StorageManager\StorageManagerFacade.cs" />
+     <Compile Include="Assets\Prefabs\System\ViewManager\ConfirmManager.cs" />
+     <Compile Include="Assets\Prefabs\System\ViewManager\EffectManager.cs" />
+     <Compile Include="Assets\Prefabs\System\ViewManager\PopUpManager.cs" />
+     <Compile Include="Assets\Prefabs\System\ViewManager\ScreenManager.cs" />
+     <Compile Include="Assets\Prefabs\TeamManager\CommonScripts\ShowStatCards.cs" />
+     <Compile Include="Assets\Prefabs\Test\FreCreDebugMenu.cs" />
+     <Compile Include="Assets\Prefabs\Test\FreCreDebugObject.cs" />
+     <Compile Include="Assets\Prefabs\Test\JsonValidator.cs" />
+     <Compile Include="Assets\Prefabs\Test\UILog.cs" />
+     <Compile Include="Assets\Prefabs\Test\_MonsterFormatChecker.cs" />
+     <Compile Include="Assets\Prefabs\Test\_StageEditor.cs" />
+     <Compile Include="Assets\SoundManagerPro\EditorHelper\EditorUpdateCheck.cs" />
+     <Compile Include="Assets\SoundManagerPro\EditorHelper\EditorVariableStorage.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Classes\SFXGroup.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Classes\SoundConnection.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Extensions\SoundManagerTools.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Managers\Singleton.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Managers\SoundManager.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Managers\SoundManager_Essentials.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Managers\SoundManager_Internal.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Managers\SoundManager_SFX.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Managers\SoundManager_SFX_Internal.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Managers\SoundManager_Variables_Music.cs" />
+     <Compile Include="Assets\SoundManagerPro\Scripts\Managers\SoundManager_Variables_SFX.cs" />
+     <Compile Include="Assets\sample.cs" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\NGUI\ReadMe - 3.0.9 f2.txt" />
+     <None Include="Assets\Plugins\unibill\resources\unibillStrings.xml" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Text (SoftClip).shader" />
+     <None Include="Assets\Plugins\unibill\resources\amazon.sdktester.json.txt" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\Plugins\unibill\Changelog.txt" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (AlphaClip) .shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (AlphaClip).shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifestAmazon.xml" />
+     <None Include="Assets\Plugins\unibill\resources\unibillInventory.xml" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Text (AlphaClip).shader" />
+     <None Include="Assets\OtherAsset\iTweenEditor\README.txt" />
+     <None Include="Assets\OtherAsset\SimpleSQL\readme.txt" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
+     <None Include="Assets\Plugins\unibill\Readme.txt" />
+     <None Include="Assets\Plugins\unibill\static\InventoryTemplate.xml" />
+     <None Include="Assets\Plugins\unibill\generated\googleplay\MassImportCSV.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (SoftClip).shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Dynamic Font.shader" />
+     <None Include="Assets\OtherAsset\NGUI\ReadMe - 3.0.5.txt" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\OtherAsset\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\Plugins\unibill\static\Manifest.xml" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
+     <None Include="Assets\Plugins\unibill\generated\rsa.xml" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
+     <None Include="Assets\Plugins\unibill\generated\storekit\MassImportTemplate.txt" />
+ <Reference Include="SimpleSQL_Runtime">
+ <HintPath>Assets\OtherAsset\SimpleSQL\Plugins\SimpleSQL_Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="unibill">
+ <HintPath>Assets\Plugins\unibill.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{C9432F4B-BB72-4281-F0F0-18F6A6882B31}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

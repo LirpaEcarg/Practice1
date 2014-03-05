@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{C9432F4B-BB72-4281-F0F0-18F6A6882B31}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity 4.3.3/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity 4.3.3/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\MiniJSON.cs" />
+     <Compile Include="Assets\Plugins\PushNotificationsAndroid.cs" />
+     <Compile Include="Assets\Plugins\Uniject\Interface\ILogger.cs" />
+     <Compile Include="Assets\Plugins\Uniject\Interface\IResourceLoader.cs" />
+     <Compile Include="Assets\Plugins\Uniject\Interface\IStorage.cs" />
+     <Compile Include="Assets\Plugins\Uniject\Interface\IUtil.cs" />
+     <Compile Include="Assets\Plugins\Uniject\impl\UnityLogger.cs" />
+     <Compile Include="Assets\Plugins\Uniject\impl\UnityPlayerPrefsStorage.cs" />
+     <Compile Include="Assets\Plugins\Uniject\impl\UnityResourceLoader.cs" />
+     <Compile Include="Assets\Plugins\Uniject\impl\UnityUtil.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\AmazonAppStore\AmazonAppStoreBillingService.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\AmazonAppStore\AmazonAppStoreCallbackMonoBehaviour.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\AmazonAppStore\IRawAmazonAppStoreBillingInterface.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\AmazonAppStore\RawAmazonAppStoreBillingInterface.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\AppleAppStore\AppleAppStoreBillingService.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\AppleAppStore\AppleAppStoreCallbackMonoBehaviour.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\AppleAppStore\IStoreKitPlugin.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\AppleAppStore\OSXStorekitPluginImpl.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\AppleAppStore\StoreKitPluginImpl.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\GooglePlay\GooglePlayBillingService.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\GooglePlay\GooglePlayCallbackMonoBehaviour.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\GooglePlay\IRawGooglePlayInterface.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\GooglePlay\RawGooglePlayInterface.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\WP8\WP8BillingService.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\WP8\WP8Eventhook.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\Biller.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\CurrencyManager.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\FakeBillingService.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\HelpCentre.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\IBillingService.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\IBillingServiceCallback.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\InventoryDatabase.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\InventoryModifier.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\MiniJSON.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\ProductIdRemapper.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\RemoteConfigFetcher.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\RemoteConfigManager.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\SmallXmlParser.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\TransactionDatabase.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\UnibillConfiguration.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\UnibillErrors.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\UnibillXmlParser.cs" />
+     <Compile Include="Assets\Plugins\unibill\src\impl\Unibiller.cs" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\NGUI\ReadMe - 3.0.9 f2.txt" />
+     <None Include="Assets\Plugins\unibill\resources\unibillStrings.xml" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Text (SoftClip).shader" />
+     <None Include="Assets\Plugins\unibill\resources\amazon.sdktester.json.txt" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\Plugins\unibill\Changelog.txt" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (AlphaClip) .shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (AlphaClip).shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifestAmazon.xml" />
+     <None Include="Assets\Plugins\unibill\resources\unibillInventory.xml" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Text (AlphaClip).shader" />
+     <None Include="Assets\OtherAsset\iTweenEditor\README.txt" />
+     <None Include="Assets\OtherAsset\SimpleSQL\readme.txt" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
+     <None Include="Assets\Plugins\unibill\Readme.txt" />
+     <None Include="Assets\Plugins\unibill\static\InventoryTemplate.xml" />
+     <None Include="Assets\Plugins\unibill\generated\googleplay\MassImportCSV.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (SoftClip).shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Dynamic Font.shader" />
+     <None Include="Assets\OtherAsset\NGUI\ReadMe - 3.0.5.txt" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\OtherAsset\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\Plugins\unibill\static\Manifest.xml" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
+     <None Include="Assets\Plugins\unibill\generated\rsa.xml" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\OtherAsset\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
+     <None Include="Assets\Plugins\unibill\generated\storekit\MassImportTemplate.txt" />
+ <Reference Include="SimpleSQL_Runtime">
+ <HintPath>Assets\OtherAsset\SimpleSQL\Plugins\SimpleSQL_Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="unibill">
+ <HintPath>Assets\Plugins\unibill.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

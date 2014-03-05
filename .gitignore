@@ -1,0 +1,8 @@
+Library
+Temp
+IOSAPK
+*.apk
+*.pidb
+*.unityproj
+*.sln
+*.userprefs
