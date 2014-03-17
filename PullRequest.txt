@@ -1,0 +1,47 @@
+I check out the local repository from the Organization 
+
+hub clone org name / repository name
+I make the Issue in Organization 
+
+Issue numbers are issued here 
+
+I make a topic branch 
+
+git checkout-b issues / issue number
+Develop
+
+I write a code , to pass test
+
+I will push to the repository of the Organization topic branches
+
+git push origin issues / issue number
+
+To pull request
+
+hub pull-request-i issue number -h org name : issues / issue number
+
+Code review
+
+People other than yourself to code review the pull request .
+Here , you can correct the code if I need code modification , and git push, to code review again .
+
+Merge
+
+I want to merge in the GitHub website reviews Ttara .
+It is incorporated into the master branch here
+
+I want to delete the topic branch of remote
+
+When you merge , you press " Delete Branch " button in coming out on the screen of the GitHub.
+
+I also update the master branch of local
+
+git pull
+
+I want to delete the topic branch of local
+
+Let the delete the topic branch that has been incorporated into the master
+git branch-d issues / issue number
+
+Stock this post Create an edit request
+Person subject to the programmers who are looking for PR career change destination , the destination work - Qiita: Career
